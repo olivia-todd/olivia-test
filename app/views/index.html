@@ -1,0 +1,113 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="#">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="#">Driving and transport</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">Driving licences</li>
+  </ol>
+</div>
+
+      <h1 class="govuk-heading-xl">
+        View or share your driving licence information
+      </h1>
+      <p>
+        You can use this service to:
+      </p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>view your driving record, for example vehicles you can drive</li>
+        <li>check your penalty points or disqualifications</li>
+        <li>create a licence ‘check code’ to share your driving record with someone, for example a car hire company</li>
+      </ul>
+
+      <p>The check code will be valid for 21 days.</p>
+
+      <p>You’ll need:</p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>your driving licence number</li>
+        <li>your National Insurance number</li>
+        <li>the postcode on your driving licence</li>
+      </ul>
+
+      <div class="govuk-inset-text">
+        This service is also available in Welsh (Cymraeg).
+      </div>
+
+      <a href="#" role="button" draggable="false" class="govuk-button govuk-button--start" data-module="govuk-button">
+        Start now
+          <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" role="presentation" focusable="false">
+            <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z" />
+          </svg>
+      </a>
+
+      <div class="govuk-tabs" data-module="govuk-tabs">
+  <h2 class="govuk-tabs__title">
+    Contents
+  </h2>
+  <ul class="govuk-tabs__list">
+    <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+      <a class="govuk-tabs__tab" href="#past-day">
+        More information
+      </a>
+    </li>
+    <li class="govuk-tabs__list-item">
+      <a class="govuk-tabs__tab" href="#past-week">
+        Other ways to apply
+      </a>
+    </li>
+  </ul>
+  <section class="govuk-tabs__panel" id="past-day">
+    <p>You can only use this service if your licence was issued in England, Wales or Scotland.</p>
+
+    <p>It’s a criminal offence to obtain someone else’s personal information without their permission.</p>
+
+  </section>
+  <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-week">
+    <h2 class="govuk-heading-l">Apply using GOV.UK Verify</h2>
+    <p>You can also use GOV.UK Verify to access your driving licence information and get a licence check code.</p>
+    <p>If you haven’t used GOV.UK Verify before, it will take you about 5 minutes to get set up.</p>
+
+    <h2 class="govuk-heading-l">Apply by phone</h2>
+    <p>0300 083 0013<br>
+    Monday to Friday, 8am to 7pm<br>
+    Saturday, 8am to 2pm<br>
+    Find out about call charges</p>
+
+    <h2 class="govuk-heading-l">Apply by post</h2>
+    <p>You can either send a request form or a letter with the following information to the DVLA:</p>
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>your full name and address</li>
+      <li>your driver licence number (or your date of birth if you don’t know your driver number)</li>
+    </ul>
+
+    <p>Send your request to:</p>
+    
+    <p>DACT Team,<br>
+    DVLA,<br>
+    Swansea,<br>
+    SA99 1AJ</p>
+
+  </section>
+</div>
+
+    </div>
+</div>
+
+{% endblock %}
